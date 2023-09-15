@@ -1,13 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 
-function skuValidator(control: FormControl): { [s: string]: boolean } {
-  if (!control.value.match(/^123/)) {
-    return {invalidSku: true};
-  }
-  return {invalidSku: false}
-}
-
 @Component({
   selector: 'app-demo-form-with-events',
   templateUrl: './demo-form-with-events.component.html',
