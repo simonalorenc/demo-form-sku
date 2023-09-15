@@ -34,4 +34,18 @@ input {
     border-radius: 5px;
     color: gray;
     width: 150px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    height: 25px;
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: rgb(255, 216, 216);
+}
+
+.error {
+    height: 25px;
+    border: 1px solid red;
+    border-radius: 5px;
 }
