@@ -1,0 +1,51 @@
+.segment {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 450px;
+}
+
+.header {
+    margin-bottom: 15px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button {
+    height: 25px;
+    border: 1px solid rgb(164, 164, 164);
+    border-radius: 5px;
+    color: gray;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    height: 25px;
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: rgb(255, 216, 216);
+}
+
+.error {
+    height: 25px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
