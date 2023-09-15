@@ -7,13 +7,11 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./demo-form-sku-with-builder.component.scss']
 })
 export class DemoFormSkuWithBuilderComponent implements OnInit {
-  myForm!: FormGroup
+  myForm = this.fb.group({
+    sku: ['ABC123']
+  })
 
-  constructor(fb: FormBuilder) {
-    this.myForm = fb.group({
-      'sku': ['ABC123']
-    })
-  }
+  constructor(private fb: FormBuilder) {}
 
   ngOnInit() {
   }

@@ -1,0 +1,16 @@
+<div class="segment">
+    <h2 class="header">Demo Form: Sku with validation</h2>
+    <form [formGroup]="myForm"
+        (ngSubmit)="onSubmit(myForm.value)"
+        class="form"
+        [class.error]="!myForm.valid && myForm.touched">
+        <div class="field">
+            <label for="skuInput">SKU</label>
+            <input type="text"
+                id="skuInput"
+                placeholder="SKU"
+                [formControl]="sku">
+        </div>
+        <button type="submit" class="button">Submit</button>
+    </form>
+</div>
